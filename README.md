@@ -1,3 +1,3 @@
 # MultiPlayer-ELO-GUI-Ranking-System
 <br/>
-<img src='addPlayer.png'/>
+<img src='elogif.gif'/>

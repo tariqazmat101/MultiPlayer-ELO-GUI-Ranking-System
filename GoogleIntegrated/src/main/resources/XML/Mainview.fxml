@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Code.MainviewController">
+    <children>
+        <MenuBar VBox.vgrow="NEVER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Data">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Load Data" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Save Data" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSaveAs" text="Save as" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleNew" text="New" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Players">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#changetoAddNewPlayersDialogue" text="Add new player" />
+                        <MenuItem fx:id="searchPlayeremenu" mnemonicParsing="false" onAction="#changetoSearchPlayer" text="Search Player" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="403.0" prefWidth="681.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Button layoutX="88.0" layoutY="307.0" mnemonicParsing="false" onAction="#changetoCreateMatch" prefHeight="25.0" prefWidth="157.0" text="Create new match" />
+                <Text layoutX="126.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matches" wrappingWidth="65.13671875">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Text>
+                <TableView fx:id="playersTableView" layoutX="335.0" layoutY="29.0" prefHeight="270.0" prefWidth="297.0">
+                    <columns>
+                  <TableColumn fx:id="Rank" editable="false" prefWidth="40.0" sortable="false" text="Rank" />
+                        <TableColumn fx:id="Users" editable="false" prefWidth="102.0" sortable="false" text="User" />
+                        <TableColumn fx:id="Rating" prefWidth="53.0" sortable="false" text="Rating" />
+                        <TableColumn fx:id="Wins" prefWidth="29.0" sortable="false" text="W" />
+                        <TableColumn fx:id="Loss" prefWidth="27.0" sortable="false" text="L" />
+                  <TableColumn fx:id="Streak" prefWidth="45.0" sortable="false" text="Strk" />
+                    </columns>
+                </TableView>
+                <Text layoutX="422.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LeaderBoard" wrappingWidth="94.13671875">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Text>
+                <Button layoutX="331.0" layoutY="320.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="65.0" text="ni" />
+            <ListView fx:id="matchesListView" layoutX="22.0" layoutY="29.0" prefHeight="270.0" prefWidth="297.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

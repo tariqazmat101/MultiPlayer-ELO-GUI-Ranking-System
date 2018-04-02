@@ -1,5 +1,4 @@
 # ELO-League-Management-System
-<h1>Work in Progress!</h1>
 <br/>
 <h3>Purpose</h3>
 **This is a free open-source application designed to help minor E-sports leagues track leaderboard rankings and player stats. The application is capable of supporting up to 5 unique players in 1 match. It uses the ELO rating system, a popular method for calculating the relative skill level of a player.  **

@@ -10,7 +10,7 @@ This is a free open-source application designed to help minor E-sports leagues t
 <img src='output.gif'/>
   
   
-  ###Backstory
+  ### Backstory
   
    if you ever organized a mutli-player competitive event, you know the head ache that comes with ranking players whenever they win/lose.  Sure, you can rank people by wins, but what if the top guy, farmed all his wins from lower ranked-players?
  
